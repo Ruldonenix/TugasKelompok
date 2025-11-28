@@ -4,40 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasa Rawat Akun - Penjoki</title>
+    <title>Jasa Joki dan Rawat Akun - Portofolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <h1>PENJOKI</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Beranda</a></li>
+
+    <header class="header">
+        <nav class="nav">
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-list" id="navList">
+                <li><a href="index.html">Beranda</a></li>
                 <li><a href="layanan.html">Layanan</a></li>
-                <li><a href="portofolio.html">Portofolio</a></li>
+                <li><a href="portofolio.html" class="active">Portofolio</a></li>
                 <li><a href="harga.html">Harga</a></li>
                 <li><a href="kontak.html">Kontak</a></li>
             </ul>
         </nav>
-        <button class="menu-toggle">☰</button>
-        <section>
-            <article>
-                <h2>Lorem Ipsum Dolor Sit Amet</h2>
-                <Lorem Ipsum Dolor Sit Amet</p>
-                    <img src="" alt="contoh gambar" width="500" height="300">
-            </article>
-            <aside>
-                <h3>Tentang</h3>
-                <ul>
-                    <li>Lorem Ipsum Dolor Sit Amet</li>
-                    <li>Lorem Ipsum Dolor Sit Amet</li>
-                    <li>Lorem Ipsum Dolor Sit Amet</li>
-                    <li>Lorem Ipsum Dolor Sit Amet</li>
-                </ul>
-            </aside>
-        </section>
     </header>
+
+    <main>
+        <section id="portofolio-list">
+            <h2>Portofolio</h2>
+            <p style="text-align: center; margin-bottom: 40px;">Ratusan akun telah kami optimalkan. Kualitas pengerjaan adalah prioritas.</p>
+
+            <div class="cards-container">
+                <div class="card">
+                    <h4>Genshin Impact (Abyss Clear)</h4>
+                    <p>Target: Spiral Abyss 36 Bintang</p>
+                    <p style="font-style: italic;">"Selalu selesai di hari pertama reset."</p>
+                </div>
+                <div class="card">
+                    <h4>Honkai Star Rail (MoC Clear)</h4>
+                    <p>Target: Memory of Chaos Penuh</p>
+                    <p style="font-style: italic;">"Artefak diatur ulang untuk hasil maksimal."</p>
+                </div>
+                <div class="card">
+                    <h4>Joki Story & Eksplorasi</h4>
+                    <p>Target: 100% Eksplorasi</p>
+                    <p style="font-style: italic;">"Semua hidden chest & puzzle diselesaikan."</p>
+                </div>
+            </div>
+
+            <p style="text-align: center; margin-top: 50px;">
+                Untuk melihat bukti screenshot pengerjaan terbaru (termasuk *watermark* demi keamanan), silakan hubungi kami di <a href="kontak.html">Halaman Kontak</a>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Jasa Rawat Akun Pro. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
+</html>

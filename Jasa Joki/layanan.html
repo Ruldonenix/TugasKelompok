@@ -4,48 +4,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasa Rawat Akun - Layanan</title>
-
+    <title>Jasa Joki dan Rawat Akun - Layanan</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-    <header>
-        <div class="logo">
-            <h1>MENU</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Beranda</a></li>
-                <li><a href="layanan.html">Layanan</a></li>
+    <header class="header">
+        <nav class="nav">
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-list" id="navList">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="layanan.html" class="active">Layanan</a></li>
                 <li><a href="portofolio.html">Portofolio</a></li>
                 <li><a href="harga.html">Harga</a></li>
                 <li><a href="kontak.html">Kontak</a></li>
             </ul>
         </nav>
-        <button class="menu-toggle">☰</button>
     </header>
 
     <main>
-        <section id="keunggulan" class="section-padding">
-            <h3>LAYANAN GAME YANG TERSEDIA</h3>
-            <div class="cards-container">
+        <section id="layanan-game">
+            <h2>Layanan Game yang Tersedia</h2>
+            <p style="text-align: center; margin-bottom: 40px;">Kami fokus pada game gacha dan MMORPG yang membutuhkan farming konsisten.</p>
+
+            <!-- Mengganti cards-container dengan cards dari kode kedua -->
+            <div id="cards">
                 <div class="card">
-                    <h4>GAME</h4>
-                    <p>Wuthering Waves</p>
-                    <p>Genshin Impact</p>
-                    <p>Honkai Impact</p>
-                    <p>Honkai Star Rail</p>
-                    <p>Zenless Zone Zero</p>
-                    <p>Dragon Nest Sea/Classic</p>
-                    <p>Dragon Nest Sea/Classic</p>
+                    <div class="card_content">
+                        <img src="Wuthering_Waves.jpeg" alt="Wuthering Waves Photo" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px;">
+                        <label for="caption1" style="font-size: 14px; margin-bottom: 5px;">
+                            Daily Quest<br>
+                            Daily <br>
+                            Daily Quest<br>
+                            Daily Quest<br>
+                            Daily Quest<br>
+                            Daily Quest<br>
+                        </label>
+                    </div>
                 </div>
+
+                <div class="card">
+                    <div class="card_content">
+                        <img src="Genshin_Impact.webp" alt="Genshin Impact Photo" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px;">
+                        <label for="caption2" style="font-size: 14px; margin-bottom: 5px;">
+                            Daily Quest<br>
+                            Spiral Abyss<br>
+                            DQ<br>
+                            DQ<br>
+                            DQ<br>
+                            DQ<br>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_content">
+                        <img src="Dragon_Nest.jpg" alt="Dragon Nest Photo" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px;">
+                        <label for="caption3" style="font-size: 14px; margin-bottom: 5px;">
+                            DQS<br>
+                            DQS<br>
+                            DQS<br>
+                            DQS<br>
+                            DQS<br>
+                            DQS<br>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_content">
+                        <img src="Honkai_Star_Rail.webp" alt="Honkai Star Rail Photo" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px;">
+                        <label for="caption4" style="font-size: 14px; margin-bottom: 5px;">
+                            BDAS<br>
+                            BDAS<br>
+                            BDAS<br>
+                            BDAS<br>
+                            BDAS<br>
+                            BDAS<br>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tipe-jasa">
+            <h2>Tipe Jasa yang Ditawarkan</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <p class="feature-title">Jasa Harian / Mingguan</p>
+                    <p>Semua yang dibutuhkan untuk menjaga akun tetap optimal tanpa Anda sentuh.</p>
+                </div>
+                <div class="feature-card">
+                    <p class="feature-title">Jasa Spesifik (Per Task)</p>
+                    <p>Hanya butuh penyelesaian satu event, satu lantai Abyss, atau satu misi tertentu.</p>
+                </div>
+            </div>
         </section>
     </main>
-    <script src="main.js"></script>
 
+    <footer>
+        <p>&copy; 2025 Jasa Rawat Akun Pro. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
